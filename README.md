@@ -13,3 +13,4 @@ System requirments:
   mySQL Workbench 8.0 CE
   mySQL JBDC Driver, which can be installed within Netbeans
   
+dsa
