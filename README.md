@@ -11,13 +11,9 @@ Attached as well is the several excel files used as a "middle man" approach to i
 a download requirment.
 
 System requirments:
-
   Netbeans IDE 8.2, 
-  
   Javafx plugin, which can be installed within Netbeans,   
-  
   mySQL Workbench 8.0 CE, 
-  
   mySQL JBDC Driver, which can be installed within Netbeans
 
 Back End Steps:
