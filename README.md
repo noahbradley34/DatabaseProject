@@ -19,6 +19,8 @@ System requirments:
   mySQL Workbench 8.0 CE, 
   
   mySQL JBDC Driver, which can be installed within Netbeans
-  
-After downloading the 
+
+Back End Steps:
+
+Download the nbproject folder, src folder, and the mySQLDump file. Using mySQL Workbench, do a data import on the mySQLDump file. Now open Netbeans and open and save the src and nbproject into a project folder. Once this is done, please download the two plugin's listed in the System requirments. 
 
