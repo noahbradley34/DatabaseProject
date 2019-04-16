@@ -7,7 +7,8 @@ This project centers around NCAA Men's Basketball, and through the use of a UI a
 
 The UI was built in Netbeans IDE 8.2, while the database was built in mySQL Workbench 8.0 CE.
 
-Attached as well is the several excel files used as a "middle man" approach to importing the data into mySQL
+Attached as well is the several excel files used as a "middle man" approach to importing the data into mySQL. They are not
+a download requirment.
 
 System requirments:
 
@@ -19,4 +20,5 @@ System requirments:
   
   mySQL JBDC Driver, which can be installed within Netbeans
   
+After downloading the 
 
