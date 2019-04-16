@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="602.0" prefWidth="1240.98828125" style="-fx-background-color:#B59A57;" visible="true" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CSI_3450.Teams">
+  <children>
+    <Button minHeight="19.0" minWidth="19.0" mnemonicParsing="false" onAction="#exitCalculator" prefHeight="26.25" prefWidth="28.0" style="-fx-background-color:red;&#10;-fx-background-radius: 10;&#10;" text="X" textFill="BLACK" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Button>
+    <TableView id="tableview" fx:id="tableView" prefHeight="302.0" prefWidth="785.98828125" style="-fx-background-color: #B59A57;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="121.0">
+      <columns>
+        <TableColumn fx:id="School" maxWidth="5000.0" minWidth="10.0" prefWidth="200.0" text="School" />
+        <TableColumn fx:id="Conf" maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="Conf" />
+        <TableColumn fx:id="Conf_W_L" maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="Conf_W_L" />
+        <TableColumn fx:id="GB" maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="Games Back" />
+        <TableColumn fx:id="Conf_Win_Per" maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="Conf Win %" />
+        <TableColumn fx:id="Overall_W_L" maxWidth="5000.0" minWidth="10.0" prefWidth="90.0" text="Overall Record" />
+        <TableColumn fx:id="Overall_Win_Per" maxWidth="5000.0" minWidth="10.0" prefWidth="90.0" text="Overall Win %" />
+        <TableColumn fx:id="Home" maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="Home" />
+        <TableColumn fx:id="Away" maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="Away" />
+        <TableColumn fx:id="Win_Streak" maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="Win Streak" />
+        <TableColumn fx:id="AP" maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="AP" />
+        <TableColumn fx:id="USA" maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="USA" />
+      </columns>
+    </TableView>
+    <ChoiceBox id="SelectPosition" fx:id="SelectDatabase" prefWidth="70.0" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="121.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ChoiceBox>
+    <Text fill="BLACK" scaleX="4.144228783031295" scaleY="2.3252886063805427" strokeType="OUTSIDE" strokeWidth="0.0" text="Options" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="100.0">
+      <font>
+        <Font name="Arial Bold" size="7.0" />
+      </font>
+    </Text>
+    <TextField fx:id="Search" prefWidth="257.0" promptText="Search" AnchorPane.leftAnchor="316.0" AnchorPane.topAnchor="90.0" />
+    <Button mnemonicParsing="false" onAction="#SearchButton" prefWidth="79.0" text="SEARCH" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="92.0">
+      <font>
+        <Font name="SansSerif Bold" size="12.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Button font="$x2" mnemonicParsing="false" onAction="#SceneSelectorButton" prefHeight="21.0" text="GO" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="121.0" />
+      <Text layoutX="750.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teams">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="595.0" layoutY="90.0" mnemonicParsing="false" onAction="#confSearchButton" text="Conf Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+  </children>
+</AnchorPane>

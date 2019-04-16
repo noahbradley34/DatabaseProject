@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="602.0" prefWidth="1240.98828125" style="-fx-background-color:#B59A57;" visible="true" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CSI_3450.March_MadnessController">
+    <children>
+        <Button minHeight="19.0" minWidth="19.0" mnemonicParsing="false" onAction="#exitCalculator" prefHeight="26.25" prefWidth="28.0" style="-fx-background-color:red;&#10;-fx-background-radius: 10;&#10;" text="X" textFill="BLACK" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Button>
+    <ChoiceBox id="SelectPosition" fx:id="SelectDatabase" prefWidth="70.0" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="121.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ChoiceBox>
+
+    
+    <Text fill="BLACK" scaleX="4.144228783031295" scaleY="2.3252886063805427" strokeType="OUTSIDE" strokeWidth="0.0" text="Options" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="100.0">
+      <font>
+        <Font name="Arial Bold" size="7.0" />
+      </font>
+    </Text>
+      <Button layoutX="84.0" layoutY="121.0" mnemonicParsing="false" onAction="#SceneSelectorButton" text="Go" />
+    <Text layoutX="750.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="March Madness">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+    <AnchorPane layoutX="235.0" layoutY="158.0" minHeight="0.0" minWidth="0.0" prefHeight="742.0" prefWidth="1340.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="121.0">
+         <children>
+            <ImageView fitHeight="662.0" fitWidth="1182.0" layoutX="93.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true"> 
+                  <image>
+                      <Image url="@../pics/MarchMadnessBracketPic.PNG" />
+                  </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
